@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hash Link</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="stage">
+        <section class="center-ui">
+            <label id="main-label" class="sr-only" for="main-input">Geheime Eingabe</label>
+            <input id="main-input" class="main-input" type="text" placeholder="Geheime Eingabe" autocomplete="off" />
+
+            <div id="creator-tools" class="creator-tools">
+                <div class="url-row">
+                    <input id="share-url" class="share-url" type="text" readonly />
+                    <button id="copy-btn" class="copy-btn" type="button">Kopieren</button>
+                </div>
+
+                <label class="toggle">
+                    <input id="case-sensitive" type="checkbox" checked />
+                    <span>Groß/Klein beachten</span>
+                </label>
+            </div>
+
+            <p id="status" class="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="art-footer" aria-label="Projektinformationen">
+        <div class="art-footer-inner">
+            <span>&copy; 2026 Benny354912</span>
+            <span class="footer-divider" aria-hidden="true"></span>
+            <a href="https://github.com/Benny354912/hash-link-riddle" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            <span class="footer-divider" aria-hidden="true"></span>
+            <span>V2</span>
+        </div>
+    </footer>
+
+    <script defer src="app.js"></script>
+</body>
+
+</html>
